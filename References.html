@@ -20,16 +20,26 @@
             background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white background */
             border-radius: 5px;
         }
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="ProfessionalPortfolio.html">Professional</a></li>
-                <li><a href="personality.html">Personality</a></li>
-                <li><a href="PersonalDevelopmentPage.html">Personal Development</a></li>
-                <li><a href="storyboard.html">Storyboard</a></li>
-                <li><a href="References.html">References</a></li>
-            </ul>
-        </nav>
+        nav {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #0066cc;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
         .reference a {
             color: #0066cc;
             text-decoration: none;
@@ -37,11 +47,29 @@
         .reference a:hover {
             text-decoration: underline;
         }
+        .home-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
 
     <h1>References</h1>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ProfessionalPortfolio.html">Professional</a></li>
+            <li><a href="personality.html">Personality</a></li>
+            <li><a href="PersonalDevelopmentPage.html">Personal Development</a></li>
+            <li><a href="storyboard.html">Storyboard</a></li>
+            <li><a href="References.html">References</a></li>
+        </ul>
+    </nav>
 
     <div class="reference">
         <p><strong>Rohn, J., & Widener, C. (2006). </strong><em>Twelve pillars: The fundamentals of success</em>. Jim Rohn International.</p>
@@ -71,5 +99,8 @@
         <p><strong>Vercel. (n.d.). </strong><em>Vercel</em>. Retrieved February 3, 2025, from <a href="https://vercel.com/" target="_blank">https://vercel.com/</a></p>
     </div>
 
+    <a class="home-link" href="index.html">← Back to Home</a>
+
 </body>
 </html>
+
